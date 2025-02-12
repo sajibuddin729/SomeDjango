@@ -1,0 +1,17 @@
+{% load static %}
+<div class="border border-warning border-right h-100">
+    <div class="text-center">
+        <img src="{% static 'core/images/sajib.jpg' %}" alt="" class="img-fluid rounded-circle mt-5" width="100px" height="100px">
+        <h3 class="text-light mt-3 satisfy-regular"> Md Sajib Uddin</h3>
+
+    </div>
+    <hr class="border-light">
+    <nav class="nav flex-column text-center">
+        <a class="nav-link {{home}}" href="{% url 'home' %}">Home</a>
+        <a class="nav-link {{services}}" href="{% url 'services' %}">Services</a>
+        <a class="nav-link {{skill}}" href="{% url 'skill' %}">Skill</a>
+        <a class="nav-link {{contact}}" href="{% url 'contact' %}">Contact</a>
+       
+       
+    </nav>
+</div>
